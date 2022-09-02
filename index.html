@@ -1,30 +1,46 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">  
-    <title>Todo List App in JavaScript | CodingNepal</title>
-    <link rel="stylesheet" href="style.css">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  </head>
-  <body>
-    </div>
-    <div class="wrapper">
-        <header>MY TO DO LIST</header>
-      <div class="task-input">
-        <input type="text" placeholder="ADD YOUR TO DO LIST">
-      </div>
-      <div class="controls">
-        <div class="filters">
-          <span class="active" id="all">All</span>
-          <span id="pending">Pending</span>
-          <span id="completed">Completed</span>
-        </div>
-        <button class="clear-btn">Clear All</button>
-      </div>
-      <ul class="task-box"></ul>
-    </div>
+    <title>CALCULATOR</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container" align="center">
+        <h1>CALCULATOR</h1>
+        <form name="forms">
+           <div class="calc">
+            <input type="text" id="answer" name="screen"><br>
+            <input type="button" value="7" onclick="forms.screen.value+='7'">
+            <input type="button" value="8" onclick="forms.screen.value+='8'">
+            <input type="button" value="9" onclick="forms.screen.value+='9'">
+            <input type="button" value="/" onclick="forms.screen.value+='/'">
+            <input type="button" class="btn-red"value="AC" onclick="forms.screen.value=''"><br>
 
-    <script src="app.js"></script>
+            <input type="button" value="4" onclick="forms.screen.value+='4'">
+            <input type="button" value="5" onclick="forms.screen.value+='5'">
+            <input type="button" value="6" onclick="forms.screen.value+='6'">
+            <input type="button" value="*" onclick="forms.screen.value+='*'">
+            <input type="button" value="%" onclick="forms.screen.value+='%'"><br>
 
-  </body>
+            <input type="button" value="1" onclick="forms.screen.value+='1'">
+            <input type="button" value="2" onclick="forms.screen.value+='2'">
+            <input type="button" value="3" onclick="forms.screen.value+='3'">
+            <input type="button" value="+" onclick="forms.screen.value+='+'">
+            <input type="button" value="-" onclick="forms.screen.value+='-'"><br>
+
+            <input type="button" value="0" onclick="forms.screen.value+='0'">
+            <input type="button" value="00" onclick="forms.screen.value+='00'">
+            <input type="button" value="000" onclick="forms.screen.value+='000'">
+            <input type="button" value="." onclick="forms.screen.value+='.'">
+            <input type="button" class="btn-blue" value="=" onclick="forms.screen.value= eval(forms.screen.value)">
+           </div>
+           
+        </form>
+    
+    </div>
+    
+</body>
 </html>
